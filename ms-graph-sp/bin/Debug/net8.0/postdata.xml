@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PostDataList>
+    <PostData API="https://graph.microsoft.com/v1.0/sites/{site-id}/lists">
+{
+  "displayName": "Books",
+  "columns": [
+    {
+      "name": "Author",
+      "text": { }
+    },
+    {
+      "name": "PageCount",
+      "number": { }
+    }
+  ],
+  "list": {
+    "template": "genericList"
+  }
+}
+    </PostData>
+    <PostData API="https://api.example.com/anotherPostData">
+        {
+            "param1": "data1",
+            "param2": "data2"
+        }
+    </PostData>
+    <!-- 可以添加更多的PostData -->
+</PostDataList>

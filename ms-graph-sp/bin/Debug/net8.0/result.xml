@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Results>
+  <Result>
+    <API>https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com</API>
+    <Method>GET</Method>
+    <Comparison>
+      <DataA></DataA>
+      <DataB>Expected data for https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com</DataB>
+      <Result>数据不匹配</Result>
+    </Comparison>
+  </Result>
+  <Result>
+    <API>https://graph.microsoft.com/v1.0/sites/{site-id}/lists</API>
+    <Method>POST</Method>
+    <Comparison>
+      <DataC></DataC>
+      <DataD>Expected data for https://graph.microsoft.com/v1.0/sites/{site-id}/lists</DataD>
+      <Result>数据不匹配</Result>
+    </Comparison>
+  </Result>
+</Results>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APIs>
+    <API>
+        <URL>https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com</URL>
+        <Method>GET</Method>
+    </API>
+    <API>
+        <URL>https://graph.microsoft.com/v1.0/sites/{site-id}/lists</URL>
+        <Method>POST</Method>
+    </API>
+    <!-- 可以添加更多的API地址 -->
+</APIs>
