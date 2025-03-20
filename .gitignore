@@ -1,0 +1,9 @@
+ms-graph-sp/obj/
+ms-graph-sp/.vs/
+
+*.exe
+*.pdb
+*.dll
+
+ms-graph-sp.deps.json
+ms-graph-sp.runtimeconfig.json
