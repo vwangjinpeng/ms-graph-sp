@@ -1,9 +1,12 @@
 ms-graph-sp/obj/
 ms-graph-sp/.vs/
+ms-graph-sp/packages
+
+pdf-editor/obj/
+pdf-editor/bin/Release
 
 *.exe
 *.pdb
-*.dll
 
 ms-graph-sp.deps.json
 ms-graph-sp.runtimeconfig.json
