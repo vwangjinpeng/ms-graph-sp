@@ -25,6 +25,43 @@ namespace pdf_editor
         {
             SplitPDF();
         }
+        private void button_ptw_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 获取应用程序根目录路径
+                string rootPath = AppDomain.CurrentDomain.BaseDirectory;
+
+                // 输入PDF文件路径(放在应用程序根目录)
+                string inputPdf = Path.Combine(rootPath, "output\\Microsoft Graph REST API v1.0 For SharePoint.pdf");
+
+                // 输出DOCX文件路径(将保存在应用程序根目录)
+                string outputDocx = Path.Combine(rootPath, "word\\Microsoft Graph REST API v1.0 For SharePoint.docx");
+
+                Console.WriteLine($"准备转换: {inputPdf}");
+                Console.WriteLine($"输出到: {outputDocx}");
+
+                // 检查输入文件是否存在
+                if (!File.Exists(inputPdf))
+                {
+                    Console.WriteLine($"错误: 输入文件 {inputPdf} 不存在");
+                    Console.WriteLine("请确保input.pdf文件放在程序同一目录下");
+                    return;
+                }
+
+                // 转换PDF到DOCX(不显示Word界面)
+                PdfToDocxConverter.ConvertUsingInterop(inputPdf, outputDocx, false);
+
+                Console.WriteLine("转换完成！");
+                Console.WriteLine($"已生成文件: {outputDocx}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"发生错误: {ex.Message}");
+                Console.WriteLine("详细信息:");
+                Console.WriteLine(ex.ToString());
+            }
+        }
         static void SplitPDF()
         {
             string inputPdfPath = "input.pdf"; // 输入的PDF文件路径

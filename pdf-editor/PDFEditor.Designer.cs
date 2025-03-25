@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             this.button_Edit = new System.Windows.Forms.Button();
+            this.button_ptw = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_Edit
             // 
-            this.button_Edit.Location = new System.Drawing.Point(338, 231);
+            this.button_Edit.Location = new System.Drawing.Point(12, 352);
             this.button_Edit.Name = "button_Edit";
-            this.button_Edit.Size = new System.Drawing.Size(75, 23);
+            this.button_Edit.Size = new System.Drawing.Size(154, 86);
             this.button_Edit.TabIndex = 0;
-            this.button_Edit.Text = "Edit";
+            this.button_Edit.Text = "Edit【Extract PDF】";
             this.button_Edit.UseVisualStyleBackColor = true;
             this.button_Edit.Click += new System.EventHandler(this.button_Edit_Click);
+            // 
+            // button_ptw
+            // 
+            this.button_ptw.Location = new System.Drawing.Point(172, 352);
+            this.button_ptw.Name = "button_ptw";
+            this.button_ptw.Size = new System.Drawing.Size(154, 86);
+            this.button_ptw.TabIndex = 1;
+            this.button_ptw.Text = "PDF To Word";
+            this.button_ptw.UseVisualStyleBackColor = true;
+            this.button_ptw.Click += new System.EventHandler(this.button_ptw_Click);
             // 
             // PDFEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_ptw);
             this.Controls.Add(this.button_Edit);
             this.Name = "PDFEditor";
             this.Text = "PDFEditorForm";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button button_Edit;
+        private System.Windows.Forms.Button button_ptw;
     }
 }
 
